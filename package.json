@@ -1,0 +1,10 @@
+{
+  "name": "spotify-player-react",
+  "version": "1.0.0",
+  "description": "Spotify Player with React using Spotify API",
+  "main": "index.js",
+  "repository": "git@github.com:Thiiix/spotify-api-react.git",
+  "author": "Thiago Moura <thiago.moura@youse.com.br>",
+  "license": "MIT",
+  "private": false
+}
