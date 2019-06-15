@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Player - Spotify API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000">
+  </head>
+  <body>
+    <noscript>Do you need enable JavaScript to execute this application</noscript>
+
+    <div id="root"></div>
+
+    <% _.forEach(htmlWebpackPlugin.options.vendorJs, function(js) { %>
+      <script type="text/javascript" src="<%= js %>"></script>
+    <% }); %>
+  </body>
+</html>
