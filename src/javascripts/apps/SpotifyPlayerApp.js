@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import styles from '@css/main.scss';
 
 const SpotifyPlayerApp = () => {
   return(
-    <h1>Here i will start to build Spotify Player app :-)</h1>
-  )
-}
+    <fragment className={styles.background_color_dark}>
+      <h1>Here i will start to build Spotify Player app :-)</h1>
+    </fragment>
+  );
+};
 
-export default SpotifyPlayerApp
+export default SpotifyPlayerApp;
