@@ -17,7 +17,8 @@ module.exports = {
     extensions: ['.js'],
     alias: {
       '@js': resolve('src/javascripts'),
-      '@css': resolve('src/styles')
+      '@css': resolve('src/styles'),
+      '@images': resolve('src/images')
     }
   },
   devServer: {
@@ -53,6 +54,11 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        loader: 'svg-react-loader'
       }
     ]
   },
