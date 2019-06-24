@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import * as SpotifyAuthActions from '@js/store/actions/SpotifyAuthActions';
 
 const Authorize = props => {
-  const { authenticated, client_id, token, history } = props;
+  const { authenticated, token, history } = props;
   const isAutenticated = () => authenticated;
   let tokenParam = extractTokenFromUrl();
 
@@ -44,7 +44,6 @@ const extractTokenFromUrl = () => {
 
 const mapStateToProps = state => ({
   authenticated: state.SpotifyAuthReducer.authenticated,
-  client_id: state.SpotifyAuthReducer.Client_ID,
 });
 
 const mapDispatchToProps = dispatch =>

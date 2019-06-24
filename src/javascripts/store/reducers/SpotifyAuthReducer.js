@@ -5,8 +5,6 @@ import {
 } from '../actions/SpotifyAuthActions';
 
 const initialState = {
-  Client_ID: '6e5337f3bb034927bad471d652271aa8',
-  Client_Secret: '189c4edddec848a8865cc093fe2534c3',
   token_type: null,
   access_token: null,
   refresh_token: null,
