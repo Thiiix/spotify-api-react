@@ -1,14 +1,20 @@
 import React from 'react';
 import styles from '@css/main.scss';
-import SpotifyBrand from '@images/spotify_logo_with_text.svg';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+
+import Routes from '@js/routes';
+import { store, persistor } from '@js/store';
 
 const SpotifyPlayerApp = () => {
   return(
-    <fragment className={styles.background_color_dark}>
-      <SpotifyBrand/>
-      <h1>Here i will start to build Spotify Player app :-)</h1>
-      <p>Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include documentation, but do include our build system and readme.</p>
-    </fragment>
+    <Provider store={store}>
+      <PersistGate persistor={persistor} loading={null}>
+        <div className={styles.background_color_dark}>
+          <Routes />
+        </div>
+      </PersistGate>
+    </Provider>
   );
 };
 

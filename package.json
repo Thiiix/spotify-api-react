@@ -4,7 +4,7 @@
   "description": "Spotify Player with React using Spotify API",
   "main": "./javascripts/apps/index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --open --mode=development --config build/webpack.config.development.js"
+    "start": "webpack-dev-server --progress --colors --open --mode=development --user-data-dir --disable-web-security --config build/webpack.config.development.js"
   },
   "repository": "git@github.com:Thiiix/spotify-api-react.git",
   "author": "Thiago Moura <thiago.moura@youse.com.br>",
@@ -25,8 +25,13 @@
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
     "svg-react-loader": "^0.4.6"
   }
 }

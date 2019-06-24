@@ -22,7 +22,10 @@ module.exports = {
     }
   },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    headers: {
+       'Access-Control-Allow-Origin': '*'
+     }
   },
   entry: {
     app: [
